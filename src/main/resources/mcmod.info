@@ -1,0 +1,21 @@
+[
+{
+    "modid": "ACGCraft",
+    "name": "ACGCraft",
+    "description": "A mod about ACG by MRG",
+    "version": "1.0",
+    "mcversion": "1.7.10",
+    "url": "",
+    "updateUrl":"",
+    "authorList":[
+        "MRG"
+    ],
+    "credits": "23333",
+    "logoFile": "",
+    "screenshots":[
+    ],
+    "parent": "",
+    "dependencies":[
+    ]
+}
+]
