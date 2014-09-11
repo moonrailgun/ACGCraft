@@ -1,0 +1,15 @@
+#items
+item.acgcraft:GreyIceSword.name=格雷-冰圣剑
+item.acgcraft:mapleLeaf.name=枫叶
+item.acgcraft:GreyIceEmblemLV1.name=格雷-冰徽章LV1
+item.acgcraft:GreyIceEmblemLV2.name=格雷-冰徽章LV2
+item.acgcraft:GreyIceEmblemLV3.name=格雷-冰徽章LV3
+item.acgcraft:EndIce.name=灭世之冰
+item.acgcraft:EndIcePearl.name=冰神珍珠
+item.acgcraft:OPFlameFruit.name=燃烧果实
+
+#blocks
+tile.acgcraft:FailyTail.name=妖尾方块
+
+#potions
+potion.opflame=恶魔能力-燃烧免疫

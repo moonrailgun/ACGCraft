@@ -1,5 +1,10 @@
 package com.MRG.ACGCraft.item;
 
+import java.util.List;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+
 import com.MRG.ACGCraft.creativetab.CreativeTabACGC;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;

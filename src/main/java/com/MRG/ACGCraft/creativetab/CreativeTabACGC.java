@@ -11,8 +11,7 @@ public class CreativeTabACGC {
 		
 		@Override
 		public Item getTabIconItem() {
-			// TODO 自动生成的方法存根
-			return ModItems.mapleLeaf;
+			return ModItems.GreyIceEmblemLV1;
 		}
 		
 		@Override

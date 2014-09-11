@@ -1,7 +1,10 @@
 package com.MRG.ACGCraft;
 
+import net.minecraftforge.oredict.OreDictionary;
+
 import com.MRG.ACGCraft.reference.Reference;
 import com.MRG.ACGCraft.utility.LogHelper;
+import com.MRG.ACGCraft.generators.GeneratorFailTail;
 import com.MRG.ACGCraft.handler.ConfigurationHandler;
 import com.MRG.ACGCraft.init.ModBlocks;
 import com.MRG.ACGCraft.init.ModItems;
@@ -14,6 +17,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_ID, version = Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class ACGCraft 
@@ -31,8 +36,8 @@ public class ACGCraft
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler() );
 		LogHelper.info("Pre Initialization Complete!");
-		
-		//初始化物品
+
+		//init
 		ModItems.init();
 		
 		ModBlocks.init();
@@ -47,6 +52,9 @@ public class ACGCraft
 		LogHelper.info("Initialization Complete!");
 		
 		ModRecipe.init();
+		
+		GameRegistry.registerWorldGenerator(new GeneratorFailTail(), 0);
+		
 	}
 	
 	@Mod.EventHandler
