@@ -29,15 +29,13 @@ public class GeneratorFailTail implements IWorldGenerator {
 	{
 		if(rand.nextInt(4) == 0) return;
 		
-		int x = block_x * 16 +rand.nextInt(16);
-		int z = block_z * 16 +rand.nextInt(16);
-		int y = rand.nextInt(40);
+		int x = block_x * 16 + rand.nextInt(16);
+		int z = block_z * 16 + rand.nextInt(16);
+		int y = rand.nextInt(30) + 10;//10 to 40
 		
 		for(int i = 0; i < 4; i++)
 		{
-			if(y>10){
-				tryCreateBlock(world, x+rand.nextInt(2)-rand.nextInt(2), y+rand.nextInt(2)-rand.nextInt(2), z+rand.nextInt(2)-rand.nextInt(2));
-			}
+			tryCreateBlock(world, x+rand.nextInt(2)-rand.nextInt(2), y+rand.nextInt(2)-rand.nextInt(2), z+rand.nextInt(2)-rand.nextInt(2));
 		}
 	}
 	
@@ -45,7 +43,7 @@ public class GeneratorFailTail implements IWorldGenerator {
 	{
 		if(world.getBlock(x, y, z) == Blocks.stone)
 		{
-			world.setBlock(x, y, z, ModBlocks.FailyTail);LogHelper.info("createblock："+x+","+y+","+z+",");
+			world.setBlock(x, y, z, ModBlocks.FailyTail);
 		}
 	}
 	

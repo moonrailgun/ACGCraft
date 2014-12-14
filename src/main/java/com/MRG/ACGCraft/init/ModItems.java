@@ -1,6 +1,7 @@
 package com.MRG.ACGCraft.init;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeedFood;
@@ -16,6 +17,7 @@ import com.MRG.ACGCraft.item.ItemMapleLeaf;
 import com.MRG.ACGCraft.item.ItemOPFlameFruit;
 import com.MRG.ACGCraft.reference.Reference;
 
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
@@ -27,7 +29,9 @@ public class ModItems {
 	public static final ItemACGC EndIce = new ItemEndIce();
 	public static final Item GreyIceSword = new com.MRG.ACGCraft.item.ItemGreyIceSword() ;
 	public static final Item OPFlameFruit = new ItemOPFlameFruit(); 
-	public static final Item EndIcePearl = new ItemEndIcePearl(); 
+	public static final Item EndIcePearl = new ItemEndIcePearl();
+	public static final ItemACGC ItemThPic = new com.MRG.ACGCraft.item.ItemThPic();
+	public static final ItemACGC ItemHighMoralPrinciple = new com.MRG.ACGCraft.item.ItemHighMoralPrinciple();
 	
 	public static void init() {
 		GameRegistry.registerItem(mapleLeaf, "mapleLeaf");
@@ -38,5 +42,7 @@ public class ModItems {
 		GameRegistry.registerItem(EndIcePearl, "EndIcePearl");
 		GameRegistry.registerItem(GreyIceSword, "GreyIceSword");
 		GameRegistry.registerItem(OPFlameFruit, "OPFlameFruit");
+		GameRegistry.registerItem(ItemThPic, "ItemThPic");
+		GameRegistry.registerItem(ItemHighMoralPrinciple, "HighMoralPrinciple");
 	}
 }

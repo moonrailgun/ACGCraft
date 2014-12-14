@@ -1,5 +1,7 @@
 package com.MRG.ACGCraft.item;
 
+import java.util.List;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
@@ -7,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.potion.PotionHelper;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import com.MRG.ACGCraft.creativetab.CreativeTabACGC;
@@ -22,6 +25,13 @@ public class ItemOPFlameFruit extends ItemFood {
 		this.setUnlocalizedName("OPFlameFruit");
 		this.setCreativeTab(CreativeTabACGC.ACGC_TAB);
 		this.setAlwaysEdible();
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_)
+	{
+		p_77624_3_.add(StatCollector.translateToLocal("display.ACGCraft:BugItem.Line1"));
 	}
 
 	@Override

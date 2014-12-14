@@ -7,9 +7,22 @@ item.acgcraft:GreyIceEmblemLV3.name=格雷-冰徽章LV3
 item.acgcraft:EndIce.name=灭世之冰
 item.acgcraft:EndIcePearl.name=冰神珍珠
 item.acgcraft:OPFlameFruit.name=燃烧果实
+item.acgcraft:HighMoralPrinciple.name=节操
 
 #blocks
 tile.acgcraft:FailyTail.name=妖尾方块
 
 #potions
 potion.opflame=恶魔能力-燃烧免疫
+potion.endice=灭世之冰
+
+#keys
+keys.acgcraft.category=ACGCraft
+keys.acgcraft.charge=Charge
+keys.acgcraft.release=Release
+
+#lines
+display.ACGCraft:BugItem.Line1=不要动！作者还没做好这个东西呢！崩了别怪我
+display.ACGCraft:HighMoralPrinciple.Line1=博丽灵梦丢下的节操
+display.ACGCraft:HighMoralPrinciple.Line2=ACG界的通用货币
+display.ACGCraft:GreyIceSword.Line1=具有寒冰的气息

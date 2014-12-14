@@ -15,7 +15,7 @@ public class BlockACGC extends Block {
 	
 	public BlockACGC()
 	{
-		this(Material.rock);
+		 super(Material.rock);
 	}
 	
     @Override

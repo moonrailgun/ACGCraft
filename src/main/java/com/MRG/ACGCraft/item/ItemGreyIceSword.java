@@ -1,5 +1,7 @@
 package com.MRG.ACGCraft.item;
 
+import java.util.List;
+
 import com.MRG.ACGCraft.creativetab.CreativeTabACGC;
 import com.MRG.ACGCraft.reference.Reference;
 
@@ -12,6 +14,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class ItemGreyIceSword extends ItemSword{
@@ -22,6 +25,12 @@ public class ItemGreyIceSword extends ItemSword{
 		this.setCreativeTab(CreativeTabACGC.ACGC_TAB);
 	}
 	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_)
+	{
+		p_77624_3_.add(StatCollector.translateToLocal("display.ACGCraft:GreyIceSword.Line1"));
+	}
 	
 	@Override
 	public boolean onItemUse(ItemStack item_stack, EntityPlayer player,

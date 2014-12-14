@@ -1,5 +1,7 @@
 package com.MRG.ACGCraft.item;
 
+import java.util.List;
+
 import com.MRG.ACGCraft.creativetab.CreativeTabACGC;
 import com.MRG.ACGCraft.entity.EntityEndIcePearl;
 import com.MRG.ACGCraft.init.ModItems;
@@ -14,6 +16,7 @@ import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.item.ItemEnderEye;
 import net.minecraft.item.ItemSnowball;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class ItemEndIcePearl extends ItemSnowball {
@@ -25,6 +28,13 @@ public class ItemEndIcePearl extends ItemSnowball {
 		this.maxStackSize = 1;
 		this.setCreativeTab(CreativeTabACGC.ACGC_TAB);
 		this.setMaxDamage(20000);
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_)
+	{
+		p_77624_3_.add(StatCollector.translateToLocal("display.ACGCraft:GreyIceSword.Line1"));
 	}
 
 	@Override

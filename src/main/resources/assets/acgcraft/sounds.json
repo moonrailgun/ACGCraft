@@ -1,0 +1,5 @@
+{
+    "a": {"catagory": "master","sounds":[{"name": "a","stream": true}]},
+    "b": {"category": "master","sounds": [{"name": "b","stream": true}]},
+    "c": {"category": "master","sounds": [{"name": "c","stream": true}]}
+}
