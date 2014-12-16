@@ -10,9 +10,11 @@ import com.MRG.ACGCraft.creativetab.CreativeTabACGC;
 import com.MRG.ACGCraft.item.ItemACGC;
 import com.MRG.ACGCraft.item.ItemEndIce;
 import com.MRG.ACGCraft.item.ItemEndIcePearl;
+import com.MRG.ACGCraft.item.ItemGrassBundle;
 import com.MRG.ACGCraft.item.ItemGreyIceEmblemLV1;
 import com.MRG.ACGCraft.item.ItemGreyIceEmblemLV2;
 import com.MRG.ACGCraft.item.ItemGreyIceEmblemLV3;
+import com.MRG.ACGCraft.item.ItemHerbs;
 import com.MRG.ACGCraft.item.ItemMapleLeaf;
 import com.MRG.ACGCraft.item.ItemOPFlameFruit;
 import com.MRG.ACGCraft.reference.Reference;
@@ -30,8 +32,10 @@ public class ModItems {
 	public static final Item GreyIceSword = new com.MRG.ACGCraft.item.ItemGreyIceSword() ;
 	public static final Item OPFlameFruit = new ItemOPFlameFruit(); 
 	public static final Item EndIcePearl = new ItemEndIcePearl();
-	public static final ItemACGC ItemThPic = new com.MRG.ACGCraft.item.ItemThPic();
-	public static final ItemACGC ItemHighMoralPrinciple = new com.MRG.ACGCraft.item.ItemHighMoralPrinciple();
+	public static final ItemACGC ThPic = new com.MRG.ACGCraft.item.ItemThPic();
+	public static final ItemACGC HighMoralPrinciple = new com.MRG.ACGCraft.item.ItemHighMoralPrinciple();
+	public static final ItemHerbs Herbs = new ItemHerbs();
+	public static final ItemACGC GrassBundle = new ItemGrassBundle();
 	
 	public static void init() {
 		GameRegistry.registerItem(mapleLeaf, "mapleLeaf");
@@ -42,7 +46,9 @@ public class ModItems {
 		GameRegistry.registerItem(EndIcePearl, "EndIcePearl");
 		GameRegistry.registerItem(GreyIceSword, "GreyIceSword");
 		GameRegistry.registerItem(OPFlameFruit, "OPFlameFruit");
-		GameRegistry.registerItem(ItemThPic, "ItemThPic");
-		GameRegistry.registerItem(ItemHighMoralPrinciple, "HighMoralPrinciple");
+		GameRegistry.registerItem(ThPic, "ItemThPic");
+		GameRegistry.registerItem(HighMoralPrinciple, "HighMoralPrinciple");
+		GameRegistry.registerItem(Herbs, "Herbs");
+		GameRegistry.registerItem(GrassBundle, "GrassBundle");
 	}
 }

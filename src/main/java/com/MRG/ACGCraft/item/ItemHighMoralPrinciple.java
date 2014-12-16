@@ -17,7 +17,7 @@ public class ItemHighMoralPrinciple extends ItemACGC {
 		super();
 		this.setUnlocalizedName("HighMoralPrinciple");
 		this.setCreativeTab(CreativeTabACGC.ACGC_TAB);
-		this.maxStackSize = 50;
+		//this.maxStackSize = 50;
 	}
 	
 	@SideOnly(Side.CLIENT)

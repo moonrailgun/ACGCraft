@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 public class SoundHandler {
 	public static void onEntityPlay(String name,World world,Entity entityName,float volume,float pitch)
 	{
-		LogHelper.info("Music " + name + " is playing!");
-		world.playSoundAtEntity(entityName, ("acgcraft:" + name), (float)volume, (float) pitch);
+		LogHelper.info("Music " + name + " is playing by " + entityName.toString());
+		world.playSoundAtEntity(entityName, ("acgcraft:acgc_" + name), (float)volume, (float) pitch);
 	}
 }

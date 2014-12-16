@@ -11,18 +11,21 @@ import net.minecraft.world.World;
 
 import com.MRG.ACGCraft.creativetab.CreativeTabACGC;
 import com.MRG.ACGCraft.entity.EntityThPic;
+import com.MRG.ACGCraft.utility.LogHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemThPic extends ItemACGC {
 	
-	private int title_id = getIdFromItem(this);
+	private int title_id;
 	
 	public ItemThPic() {
 		super();
 		this.setUnlocalizedName("Pic");
 		this.setCreativeTab(CreativeTabACGC.ACGC_TAB);
+		
+		title_id = getIdFromItem(this);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -46,6 +49,7 @@ public class ItemThPic extends ItemACGC {
 		
 		if (entity.onValidSurface()) {
 			if (!world.isRemote) {
+				LogHelper.info(title_id);
 				world.spawnEntityInWorld(entity);
 			}
 			--item_stack.stackSize;

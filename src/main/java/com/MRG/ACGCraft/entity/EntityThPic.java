@@ -32,8 +32,7 @@ public class EntityThPic extends Entity {
 		this.block_pos_y = y;
 		this.block_pos_z = z;
 		this.hanging_direction = direction;
-		//this.title_id = title_id;
-		this.title_id = 1;
+		this.title_id = title_id;
 		
 		this.save_params();
 		this.init_params();
@@ -209,7 +208,7 @@ public class EntityThPic extends Entity {
 			return false;
 		}
 		
-		return true;		
+		return true;
 	}
 	
 	@Override
@@ -242,7 +241,7 @@ public class EntityThPic extends Entity {
 	}
 
 	public void dropItemStack() {
-		this.entityDropItem(new ItemStack(ModItems.ItemThPic), 0.0F);
+		this.entityDropItem(new ItemStack(ModItems.ThPic), 0.0F);
 	}
 	
 	@Override

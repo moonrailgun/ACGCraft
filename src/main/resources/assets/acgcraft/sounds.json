@@ -1,5 +1,5 @@
 {
-    "a": {"catagory": "master","sounds":[{"name": "a","stream": true}]},
-    "b": {"category": "master","sounds": [{"name": "b","stream": true}]},
-    "c": {"category": "master","sounds": [{"name": "c","stream": true}]}
+    "acgc_a": {"catagory": "master","sounds":[{"name": "acgc_a","stream": true}]},
+    "acgc_b": {"category": "master","sounds": [{"name": "acgc_b","stream": true}]},
+    "acgc_c": {"category": "master","sounds": [{"name": "acgc_c","stream": true}]}
 }

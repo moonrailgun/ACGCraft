@@ -1,6 +1,7 @@
 package com.MRG.ACGCraft;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -9,7 +10,6 @@ import com.MRG.ACGCraft.utility.LogHelper;
 import com.MRG.ACGCraft.client.gui.GuiEnergyBar;
 import com.MRG.ACGCraft.client.handler.ConfigurationHandler;
 import com.MRG.ACGCraft.client.handler.GUIHandler;
-import com.MRG.ACGCraft.client.handler.HookEventHandler;
 import com.MRG.ACGCraft.client.handler.KeyInputEventHandler;
 import com.MRG.ACGCraft.client.handler.command.ACGCCommandPlayMusic;
 import com.MRG.ACGCraft.generators.GeneratorFailTail;
@@ -61,7 +61,8 @@ public class ACGCraft
 	{
 		//register GUI,tileEntities,crafting recipes etc.
 		
-		
+		MinecraftForge.addGrassSeed(new ItemStack(ModItems.Herbs), 5);
+		MinecraftForge.addGrassSeed(new ItemStack(ModItems.GrassBundle), 100);
 		ModRecipe.init();
 		
 		GameRegistry.registerWorldGenerator(new GeneratorFailTail(), 0);
@@ -70,14 +71,12 @@ public class ACGCraft
 		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
         
         LogHelper.info("Initialization Complete!");
-		
 	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		MinecraftForge.EVENT_BUS.register(new GuiEnergyBar(Minecraft.getMinecraft()));
-		MinecraftForge.EVENT_BUS.register(new HookEventHandler());
 		
 		LogHelper.info("Post Initialization Complete!");
 	}

@@ -8,6 +8,8 @@ item.acgcraft:EndIce.name=灭世之冰
 item.acgcraft:EndIcePearl.name=冰神珍珠
 item.acgcraft:OPFlameFruit.name=燃烧果实
 item.acgcraft:HighMoralPrinciple.name=节操
+item.acgcraft:Herbs.name=药草
+item.acgcraft:GrassBundle.name=一捆草
 
 #blocks
 tile.acgcraft:FailyTail.name=妖尾方块
